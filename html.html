@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>To do list</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="search-bar">
+        <input type="search" id="task-search" placeholder="Search...">
+    </div>
+    <div id="tasks">
+        <div class="task">
+            <input type="checkbox">
+            <span class="task-name">Task 1</span>
+            <span class="due-date">2024-12-31</span>
+            <button class="delete-btn">Delete</button>
+        </div>
+        <div class="task">
+            <input type="checkbox">
+            <span class="task-name">Task 2</span>
+            <span class="due-date">2024-11-30</span>
+            <button class="delete-btn">Delete</button>
+        </div>
+        <div class="task">
+            <input type="checkbox">
+            <span class="task-name">Task 3</span>
+            <span class="due-date">2024-10-15</span>
+            <button class="delete-btn">Delete</button>
+        </div>
+    </div>
+    <div id="add-task-form">
+        <input type="text" id="new-task-name" placeholder="New task name">
+        <input type="date" id="new-task-due-date">
+        <button id="add-task-btn">Add Task</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
