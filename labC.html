@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Map Puzzle</title>
+
+    <link rel="stylesheet" href="labCStyles.css" />
+    <link rel="stylesheet" href="leaflet-1.7.1/leaflet.css" />
+    <script src="leaflet-1.7.1/leaflet-src.js"></script>
+    <script src="leaflet-1.7.1/leaflet-providers.js"></script>
+    <script src="leaflet-1.7.1/leaflet-image.js"></script>
+</head>
+<body>
+    <div id="map"></div>
+
+    <div id="positionInfo">
+        <strong>Latitude:</strong> <span id="latitude"></span><br>
+        <strong>Longitude:</strong> <span id="longitude"></span><br>
+    </div>
+
+    <button id="getLocation">Get Current Location</button>
+    <button id="saveButton">Save Raster Map</button>
+    <br>
+
+    <div id="puzzleGrid">
+        <div class="drag-target" data-match="1"></div>
+        <div class="drag-target" data-match="2"></div>
+        <div class="drag-target" data-match="3"></div>
+        <div class="drag-target" data-match="4"></div>
+        <div class="drag-target" data-match="5"></div>
+        <div class="drag-target" data-match="6"></div>
+        <div class="drag-target" data-match="7"></div>
+        <div class="drag-target" data-match="8"></div>
+        <div class="drag-target" data-match="9"></div>
+        <div class="drag-target" data-match="10"></div>
+        <div class="drag-target" data-match="11"></div>
+        <div class="drag-target" data-match="12"></div>
+        <div class="drag-target" data-match="13"></div>
+        <div class="drag-target" data-match="14"></div>
+        <div class="drag-target" data-match="15"></div>
+        <div class="drag-target" data-match="16"></div>
+    </div>
+    <br>
+
+    <div id="puzzle-1" class="puzzle" draggable="true"></div>
+    <div id="puzzle-2" class="puzzle" draggable="true"></div>
+    <div id="puzzle-3" class="puzzle" draggable="true"></div>
+    <div id="puzzle-4" class="puzzle" draggable="true"></div>
+    <div id="puzzle-5" class="puzzle" draggable="true"></div>
+    <div id="puzzle-6" class="puzzle" draggable="true"></div>
+    <div id="puzzle-7" class="puzzle" draggable="true"></div>
+    <div id="puzzle-8" class="puzzle" draggable="true"></div>
+    <div id="puzzle-9" class="puzzle" draggable="true"></div>
+    <div id="puzzle-10" class="puzzle" draggable="true"></div>
+    <div id="puzzle-11" class="puzzle" draggable="true"></div>
+    <div id="puzzle-12" class="puzzle" draggable="true"></div>
+    <div id="puzzle-13" class="puzzle" draggable="true"></div>
+    <div id="puzzle-14" class="puzzle" draggable="true"></div>
+    <div id="puzzle-15" class="puzzle" draggable="true"></div>
+    <div id="puzzle-16" class="puzzle" draggable="true"></div>
+
+
+    <script src="labCScript.js"></script>
+</body>
+</html>
