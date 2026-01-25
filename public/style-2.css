@@ -1,0 +1,111 @@
+body {
+    background-color: darkgray;
+    color: lightgray;
+    font-family: Roboto, sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "main header"
+        "main aside"
+        "footer footer";
+    gap: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    grid-area: header;
+    background-image: url("style-2_header_background.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    border: 2px solid darkgray;
+    border-radius: 25px;
+}
+
+header h1 {
+    max-width: 70%;
+    margin: 50% auto 0 auto;
+    padding: 10px;
+    background-color: rgb(255 255 255 / 85%);
+    border-radius: 25px;
+    font-size: 3rem;
+    text-align: center;
+    color: darkred;
+}
+
+header p {
+    max-width: 70%;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: rgb(255 255 255 / 85%);
+    border-radius: 25px;
+    text-align: center;
+    color: black;
+}
+
+main {
+    grid-area: main;
+    background-color: #45464c;
+
+    border: 2px solid darkgray;
+    border-radius: 25px;
+
+    padding: 3%;
+}
+
+aside {
+    grid-area: aside;
+    background-color: #45464c;
+
+    border: 2px solid darkgray;
+    border-radius: 25px;
+
+    padding: 3%;
+}
+
+aside dt {
+    font-weight: bold;
+}
+
+aside dd {
+    font-style: italic;
+    margin: 3%;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #45464c;
+
+    border: 2px solid darkgray;
+    border-radius: 25px;
+
+    padding: 3%;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+h3 {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+p {
+    text-align: justify;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header"
+            "main"
+            "aside"
+            "footer";
+    }
+}
